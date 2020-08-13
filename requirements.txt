@@ -1,0 +1,4 @@
+flask
+googlenews
+newspaper3k
+nltk
