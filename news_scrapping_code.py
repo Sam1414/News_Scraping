@@ -1,7 +1,9 @@
 import re
 from GoogleNews import GoogleNews
 from newspaper import Article
+import nltk
 from nltk.stem import PorterStemmer
+nltk.download('punkt')
 
 
 def pre_process(text):
