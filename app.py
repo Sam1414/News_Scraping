@@ -1,5 +1,6 @@
 from news_scrapping_code import build
-from flask import Flask, request
+from flask import Flask, request, render_template
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -16,9 +17,10 @@ def get_res():
 
 @app.route('/')
 def default_page():
-    return '<html><body><h3>Enter URL in the following format:</h3><p><b>http://127.0.0.1:5000</b><i>/input/?url=</i><u>https://www.your_news_link.com</u></p></body></html>'
+    return render_template('home.html')
 
 
 if __name__ == '__main__':
     app.debug = True
-    app.run()
+    # app.run()
+    serve(app, host='0.0.0.0', port=1500)
