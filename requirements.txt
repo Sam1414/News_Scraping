@@ -1,4 +1,5 @@
 flask
+gunicorn
 googlenews
 newspaper3k
 nltk

@@ -9,9 +9,9 @@ def get_res():
     # Getting Input
     url = request.args.get('url')
     # Getting Result
-    result = build(url)
+    data = build(url)
     # Returning Result
-    return result
+    return data
 
 
 @app.route('/')
