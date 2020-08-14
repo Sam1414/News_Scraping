@@ -1,4 +1,5 @@
 flask
+flask-cors
 waitress
 googlenews
 newspaper3k

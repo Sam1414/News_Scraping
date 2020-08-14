@@ -1,8 +1,10 @@
 from news_scrapping_code import build
 from flask import Flask, request, render_template
 from waitress import serve
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/input/')
